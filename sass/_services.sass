@@ -1,0 +1,70 @@
+.services
+  padding: 10rem 0
+  background-color: $color-services-bg
+  z-index: 2
+  &-main
+    display: flex
+    justify-content: center
+    margin-top: 6rem
+    .services-photo
+      margin-top: 5rem
+      img
+        width: 60rem
+        height: 30rem
+    .services-description
+        max-width: 54rem
+        max-height: 30rem
+        background-color: #fff
+        padding: 3rem 3rem 4rem
+        position: relative
+        h3
+          font-size: 2rem
+          line-height: 2.7rem
+          color: $color-title
+          font-weight: bold
+          margin-bottom: 2rem
+        p
+          margin-bottom: 3rem
+        &::after
+          content: ""
+          display: inline-block
+          position: absolute
+          width: 7rem
+          height: 0.3rem
+          top: 3rem
+          background-color: $color-title
+          left: 100%
+          transform: translateX(-50%)
+        &-arrows
+          position: absolute
+          display: flex
+          align-items: center
+          right: 4rem
+          bottom: 0
+          transform: translateY(50%)
+          .arrow-bg-left, .arrow-bg-right
+            width: 5rem
+            height: 5rem
+            font-size: 4rem
+            color: #fff
+            position: relative
+            transition: all .3s ease
+            &:not(:first-child)
+              margin-left: 2rem                            
+            img
+              position: absolute
+              top: 50%          
+              left: 50%
+              transform: translate(-50%,-50%)  
+            &:hover
+              cursor: pointer
+          .arrow-bg-left
+            background-color: $color-button
+            &:hover
+              background-color: darken($color-button, 5%)
+              box-shadow: 0rem 0rem 1rem -0.5rem $color-title
+          .arrow-bg-right
+            background-color: $color-second
+            &:hover
+              background-color: darken($color-second, 5%)
+              box-shadow: 0rem 0rem 1rem -0.5rem $color-title

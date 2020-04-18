@@ -1,0 +1,50 @@
+.reviews
+  padding: 5rem 0
+  position: relative
+  &-cards
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 6rem
+  &-card
+    max-width: 40rem
+    padding: 5rem 2rem
+    position: relative
+    background-color: $color-reviews-card
+    box-shadow: 0rem .4rem 4rem rgba(186, 186, 186, 0.25)
+    font-size: 1.2rem
+    line-height: 1.7rem
+    &::before
+      content: ""
+      display: inline-block
+      width: 2.6rem
+      height: 0.3rem
+      background-color: $color-second
+      position: absolute
+      left: 2rem
+      top: 3.4rem
+  &-person
+    display: flex
+    align-items: center
+    margin-top: 1rem
+    font-size: 1.2rem
+    line-height: 1.7rem
+    font-weight: bold
+    p
+      margin-left: .5rem
+
+
+// RHOMBUS
+
+.rhombus-reviews1
+  left: 70rem
+  top: 9rem
+  transform: rotate(45deg)
+.rhombus-reviews2
+  right: 5rem
+  top: 19rem
+  transform: rotate(45deg)
+.rhombus-reviews3
+  left: 32rem
+  top: 36rem
+  transform: rotate(45deg)

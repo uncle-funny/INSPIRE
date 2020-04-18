@@ -1,0 +1,60 @@
+.questions
+  padding: 10rem 0
+  position: relative
+  &-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 6rem
+    &-left, &-right
+      flex-basis: 45%
+    .tab input, .tab-content
+      display: none
+    .tab    
+      color: #848994
+      margin-bottom: 3rem
+      
+    .tab-title 
+      display: block
+      font-size: 2rem
+      line-height: 2.7rem
+      color: $color-title
+      background-color: $color-body-bg
+      box-shadow: 0rem .4rem 4rem rgba(186, 186, 186, 0.25)
+      font-weight: bold
+      cursor: pointer
+      padding: 2.2rem 3.6rem
+      z-index: 2
+      &::after
+        content: "+"
+        float: right
+        font-size: 4.5rem
+        color: $color-second
+    .tab-content 
+      padding: 3.7rem 2.1rem 1.5rem
+      border: .3rem solid #fff
+      border-top: none
+      margin: 0 auto
+      width: 95%
+    .tab :checked + .tab-title::after 
+      content: '−'   
+    .tab :checked ~ .tab-content 
+      display: block
+
+
+
+// RHOMBUS
+
+.rhombus-questions1
+  left: 70rem
+  top: 15rem
+  transform: rotate(45deg)
+.rhombus-questions2
+  left: 77rem
+  bottom: 10rem
+  transform: rotate(45deg)
+.rhombus-questions3
+  right: 3rem
+  bottom: 5rem
+  transform: rotate(45deg)
+   

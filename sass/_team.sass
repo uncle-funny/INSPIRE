@@ -1,0 +1,112 @@
+.team
+  padding: 6rem 0
+  position: relative
+  .team-main    
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 8rem
+    & > div
+      margin-left: auto
+      margin-right: 5rem 
+    &-person
+      position: relative
+      .left-block
+        display: inline-block
+        position: absolute
+        text-align: left
+        top: 10rem
+        left: -10rem
+        z-index: -1
+        .person-logo
+          font-size: 5.2rem
+          line-height: 7.1rem
+          color: $color-icon
+          text-transform: uppercase
+      .profession
+        font-size: 2.4rem
+        line-height: 3.3rem
+        color: $color-title
+        font-weight: bold
+      .bottom-block
+        display: inline-block
+        position: absolute
+        max-width: 20rem
+        text-align: left
+        bottom: -3rem
+        right: -6rem
+        .profession
+          font-size: 1.6rem
+        .person-name
+          display: inline-block
+          font-size: 3.2rem
+          line-height: 3.4rem
+          font-weight: bold
+          position: relative
+          &::before
+            content: ""
+            display: inline-block
+            position: absolute
+            width: .7rem
+            height: .7rem
+            top: 0
+            right: 2.3rem
+            border-radius: 50%
+            background-color: $color-second
+    &-text
+      max-width: 48.6rem
+      .section-title
+        text-transform: lowercase
+        margin-bottom: 1.6rem
+        &::first-letter
+          text-transform: capitalize
+        &::before
+          top: -1.5rem
+      .button
+        margin-top: 12.6rem
+        margin-left: 10rem
+  .second-person
+    margin-top: 29rem
+    .team-main-person
+      order: 2
+    .team-main-text
+      order: 1
+    .button
+        margin-top: 3.4rem
+        margin-left: 0
+
+  .block-bg2
+    top: 43rem
+
+
+// RHOMBUS
+
+
+.rhombus-team1
+  left: 74rem
+  top: 10rem
+  transform: rotate(-30deg)
+.rhombus-team2    
+  right: 7rem
+  top: 31.8rem
+  transform: rotate(45deg)
+.rhombus-team3
+  left: 18rem
+  top: 65.5rem
+  transform: rotate(45deg)
+.rhombus-team4
+  left: 46rem
+  top: 86rem
+  transform: rotate(45deg)
+.rhombus-team5
+  right: 13rem
+  top: 106rem
+  transform: rotate(45deg)
+.rhombus-team6
+  left: 75.4rem
+  top: 127rem
+  transform: rotate(-30deg)
+.rhombus-team7
+  left: 26rem
+  bottom: -3rem
+  transform: rotate(45deg)

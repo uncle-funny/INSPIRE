@@ -1,0 +1,147 @@
+.header
+  padding-bottom: 11.4rem
+  &-bg
+    position: absolute
+    top: 0
+    right: 0
+    opacity: .7
+    z-index: -5
+    img
+      width: 85rem
+      height: 61rem
+    span
+      content: ""
+      position: absolute
+      display: block
+      top: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 1000px 0 0 300px
+      border-color: transparent transparent transparent $color-body-bg   
+  &-site
+    display: flex
+    align-items: center
+    padding-top: 2.2rem    
+    position: relative
+  &-logo    
+    a
+      margin-right: 8.4rem
+      color: $color-title
+      text-transform: uppercase
+      font-weight: bold
+      line-height: 2.5rem       
+  &-nav   
+      display: flex
+      list-style-type: none
+      margin-bottom: .010rem                
+      a
+        line-height: 1.9rem
+        color: $color-title
+        font-weight: bold
+        transition: all .3s ease        
+        &:not(:first-child)
+          margin-left: 3rem             
+        &:hover
+          color: $color-second  
+  &-drop
+    display: none
+    &-nav
+      display: none
+      flex-direction: column
+      align-items: flex-start
+      position: absolute
+      width: 100%
+      top: 5rem
+      left: 0  
+      background-color: rgba(0,0,0,.3)
+      padding: 2rem 2rem
+      a
+        line-height: 1.9rem
+        color: $color-title
+        font-weight: bold
+        transition: all .3s ease 
+        &:hover
+          color: $color-second  
+        &:not(:first-child)
+          margin-top: 1rem
+  &-text
+    margin-top: 14.2rem
+    max-width: 48.6rem
+    .main-title      
+      white-space: nowrap
+      position: relative
+      font-size: 7.2rem
+      color: $color-title
+      text-transform: uppercase
+      line-height: 9.8rem
+      &::before
+        content: ""
+        display: inline-block
+        position: absolute
+        top: -0.5rem
+        left: .7rem
+        width: 7rem
+        height: 0.3rem
+        background-color: $color-title
+      &-small
+        text-transform: lowercase
+    .help-online
+      font-weight: bold
+      color: $color-title
+      margin: 2.3rem 0 2.1rem 0
+      display: block
+      width: 100%
+      text-align: right
+      padding: .3rem 1.6rem
+      text-transform: lowercase
+      border: .2rem solid $color-second
+    .main-button
+      margin-top: 2.6rem
+      margin-left: 4rem    
+
+#dropMenu
+  font-size: 2.5rem
+  color: $color-title
+
+.show
+  display: flex
+
+.block-bg1
+  position: absolute
+  left: 43%
+  top: 38.6rem
+  height: 7rem
+  width: 16%
+  background-color: rgba(31, 213, 49, 0.2)
+  z-index: -3
+
+.block-bg2
+  position: absolute
+  height: 3.7rem
+  width: 12%
+  top: 52rem
+  left: 91%
+  background-color: rgba(31, 213, 49, 0.2)
+  transform: translateX(-100%)
+
+// RHOMBUS
+   
+.rhombus-header1
+  left: 45rem
+  top: 12.4rem
+  transform: rotate(30deg)
+.rhombus-header2
+  left: 62rem
+  top: 55rem
+  transform: rotate(-30deg)
+.rhombus-header3
+  left: 72rem
+  top: 30rem
+  transform: rotate(30deg)
+.rhombus-header4
+  left: 19.5rem
+  top: 57.5rem
+  transform: rotate(15deg)
+
+
